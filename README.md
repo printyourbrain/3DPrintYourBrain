@@ -12,7 +12,7 @@ First working implementation at FU Berlin by [Marianna Schmidt](https://www.rese
 - Meshlab
 - and a *cool* bash script tieing it all together
 
-##### If you don't like reading all of this you can go to the [video!](https://www.youtube.com/watch?v=MWKAPG3rMBI)
+#### If you don't like reading all of this you can go to the [video!](https://www.youtube.com/watch?v=MWKAPG3rMBI)
 
 ## Table of Contents
 1. Installing Docker Desktop
