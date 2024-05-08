@@ -44,6 +44,7 @@ git clone https://github.com/MichaelMigacev/3DPrintYourBrain
 ```
 ### 5. Setting up your Files
 Because a script will be running it is important to replicate the intended folder structure like this:
+*Be sure to be meticulous in this stap as the scrip is dependant on the correct folders*
 ```
 3DPrintYourBrain
 │   README.md
@@ -64,6 +65,7 @@ Because a script will be running it is important to replicate the intended folde
 Wow, that was fast, you are almost there!\
 To run an interactive container we use the following command:
 *Don't forget to change the path according to your file locations!*
+*Make sure you are using the full path from your disk like C:/.../.. and not a relative path like ./.../..* 
 ```
 docker run --platform linux/x86_64 -it -v "/path/to/pyb_mount:/home" -v "/path/to/your/freesurfer/license.txt:/opt/freesurfer-6.0.0/license.txt" michamigacev/printyourbrain:latest
 ```
@@ -77,6 +79,10 @@ Before you go around and start digging in the terminal I recommend you to\
 open pyb_mount folder on your system in a code editor. This is possible because\
 you have created a mount/volume linked to your actual file.\
 Now you can better see the script, it contains all the instructions to run it.
+*If you are having trouble running the script it might be that it has windows line endings\
+to mitigate this problem change the scripts metadata to have LF line endings instead of CRLF\
+you can do that by clicking in the bottom left corner in VSCode.* 
+
 
 This takes about 2 - 7 hours (depending on your hardware).
 
